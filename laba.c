@@ -14,19 +14,19 @@ k = scanf("%lf%lf%lf", &a, &b, &c);
 if(k != 3)
 {
     printf("incorect input");
-    return 0;
+    goto a;
 }
 
 d = b*b - 4*c*a;
 if(fabs(d) < EPS)
 {
     printf("tolko odno reshenie - %lf", (-b/(2*a)));
-    return 0;
+    goto a;
 }
 if(d < 0)
 {
  printf("korney net");
- return 0;
+ goto a;
 }
 
 
@@ -43,5 +43,6 @@ i1 = ((-b - sqrt(d))/(2*a));
 printf("rishennya priynyato:\n", i);
 printf("1 koren %lf\n", i);
 printf("2 koren %lf", i1);
+a:
 return 0;
 }
