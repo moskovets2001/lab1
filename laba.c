@@ -36,14 +36,16 @@ int main()
         {
             printf("korney net");
         }
-
-        i = ((-b + sqrt(d))/(2*a));
-        i1 = ((-b - sqrt(d))/(2*a));
-
-        if(d > 0 )
+        else
         {
-            printf("1 koren %lf\n", i);
-            printf("2 koren %lf", i1);
+            i = ((-b + sqrt(d))/(2*a));
+            i1 = ((-b - sqrt(d))/(2*a));
+
+            if(d > 0 )
+            {
+                printf("1 koren %lf\n", i);
+                printf("2 koren %lf", i1);
+            }
         }
     }
     return 0;
