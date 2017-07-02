@@ -5,16 +5,16 @@ int main()
 {
     int a[100], i, j, k = 0, max1;
 
-    scanf("%d", &a[0]);
+    scanf("%d", &j);
     i = 1;
-    max1 = a[0];
-    while (scanf("%d", &a[i]) == 1)
+    max1 = j;
+    while (scanf("%d", &j) == 1)
     {
-        if (a[i] >= max1)
+        if (j >= max1)
         {
-            if (a[i] > max1)
+            if (j > max1)
             {
-                max1 = a[i];
+                max1 = j;
                 k = 1;
             }
             else
