@@ -22,7 +22,8 @@ int main()
         }
         i++;
     }
-
+    if (i == 1)
+        printf("INCORECT iNPUT\n");
 
     printf("%d", k++);
     return 0;
