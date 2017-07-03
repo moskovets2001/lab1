@@ -3,7 +3,7 @@
 
 int main()
 {
-    int i, n, j = 1, max1, y;
+    int i, n, schet = 1, max, y;
 
 
     y = scanf("%d", &n);
@@ -12,19 +12,19 @@ int main()
     else
     {
         i = 1;
-        max1 = n;
+        max = n;
         while (scanf("%d", &n) == 1)
         {
-            if (n > max1)
+            if (n > max)
             {
-                max1 = n;
-                j = 1;
+                max = n;
+                schet = 1;
             }
-            else if (n == max1)
-                j++;
+            else if (n == max)
+                schet++;
             i++;
         }
-        printf("%d", j);
+        printf("%d", schet);
     }
     return 0;
 }
