@@ -15,16 +15,14 @@ int main()
         max1 = n;
         while (scanf("%d", &n) == 1)
         {
-            if (n >= max1)
+            if (n > max1)
             {
-                if (n > max1)
-                {
-                    max1 = n;
-                    k = 1;
-                }
-                else
-                    k++;
+                max1 = n;
+                k = 1;
             }
+            else if (n == max1)
+                k++;
+
             i++;
         }
         printf("%d", k);
