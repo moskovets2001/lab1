@@ -3,18 +3,18 @@
 
 int main()
 {
-    int a[100], i, j, k = 0, max1;
+    int a[100], i, n, k = 1, max1;
 
-    scanf("%d", &j);
+   while (scanf("%d", &n) == 0)
     i = 1;
-    max1 = j;
-    while (scanf("%d", &j) == 1)
+    max1 = n;
+    while (scanf("%d", &n) == 1)
     {
-        if (j >= max1)
+        if (n >= max1)
         {
-            if (j > max1)
+            if (n > max1)
             {
-                max1 = j;
+                max1 = n;
                 k = 1;
             }
             else
@@ -24,7 +24,6 @@ int main()
     }
     if (i == 1)
         printf("INCORECT iNPUT\n");
-
-    printf("%d", k++);
+    printf("%d", k);
     return 0;
 }
