@@ -3,7 +3,7 @@
 
 int main()
 {
-    int i, n, schet = 1, max, y;
+    int n, schet = 1, max, y;
 
 
     y = scanf("%d", &n);
@@ -11,7 +11,6 @@ int main()
         printf("INCORECT INPUT\n");
     else
     {
-        i = 1;
         max = n;
         while (scanf("%d", &n) == 1)
         {
@@ -22,7 +21,6 @@ int main()
             }
             else if (n == max)
                 schet++;
-            i++;
         }
         printf("%d", schet);
     }
