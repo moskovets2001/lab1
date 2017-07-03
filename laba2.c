@@ -3,9 +3,12 @@
 
 int main()
 {
-    int a[100], i, n, k = 1, max1;
+    int a[100], i, n, k = 1, max1, y;
 
-   while (scanf("%d", &n) == 0)
+
+    y = scanf("%d", &n);
+    if (y == 0)
+        printf("INCORECT iNPUT\n");
     i = 1;
     max1 = n;
     while (scanf("%d", &n) == 1)
@@ -22,8 +25,6 @@ int main()
         }
         i++;
     }
-    if (i == 1)
-        printf("INCORECT iNPUT\n");
     printf("%d", k);
     return 0;
 }
