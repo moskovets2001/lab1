@@ -9,22 +9,25 @@ int main()
     y = scanf("%d", &n);
     if (y == 0)
         printf("INCORECT iNPUT\n");
-    i = 1;
-    max1 = n;
-    while (scanf("%d", &n) == 1)
+    else
     {
-        if (n >= max1)
+        i = 1;
+        max1 = n;
+        while (scanf("%d", &n) == 1)
         {
-            if (n > max1)
+            if (n >= max1)
             {
-                max1 = n;
-                k = 1;
+                if (n > max1)
+                {
+                    max1 = n;
+                    k = 1;
+                }
+                else
+                    k++;
             }
-            else
-                k++;
+            i++;
         }
-        i++;
+        printf("%d", k);
     }
-    printf("%d", k);
     return 0;
 }
