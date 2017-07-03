@@ -3,12 +3,12 @@
 
 int main()
 {
-    int a[100], i, n, k = 1, max1, y;
+    int i, n, j = 1, max1, y;
 
 
     y = scanf("%d", &n);
     if (y == 0)
-        printf("INCORECT iNPUT\n");
+        printf("INCORECT INPUT\n");
     else
     {
         i = 1;
@@ -18,14 +18,13 @@ int main()
             if (n > max1)
             {
                 max1 = n;
-                k = 1;
+                j = 1;
             }
             else if (n == max1)
-                k++;
-
+                j++;
             i++;
         }
-        printf("%d", k);
+        printf("%d", j);
     }
     return 0;
 }
