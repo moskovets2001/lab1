@@ -6,13 +6,21 @@ int check(int n);
 
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    if (check(n))
-        printf("true");
+    int n, y, schet = 0;
+
+    y = scanf("%d", &n);
+    if (y == 0)
+        printf("INCORECT INPUT\n");
     else
-        printf("false");
-    return 0;
+    {
+        while (scanf("%d", &n) == 1)
+        {
+
+            if (check(n))
+                schet++;
+        }
+    }
+        printf("%d", schet+1);
 }
 int check(int n)
 {
