@@ -15,12 +15,11 @@ int main()
     {
         while (scanf("%d", &n) == 1)
         {
-
             if (check(n))
                 schet++;
         }
     }
-        printf("%d", schet+1);
+    printf("%d", schet + 1);
 }
 int check(int n)
 {
@@ -34,8 +33,5 @@ int check(int n)
         f_1 = f_2;
         f_2 = i;
     }
-    if (i == n)
-        return 1;
-    else
-        return 0;
+    return i == n;
 }
