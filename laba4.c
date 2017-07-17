@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-void swap_(int *a, int *b);
+void swap_(float *a, float *b);
 int main()
 {
-    int a, b, *k, *l;
-    scanf("%d%d", &a, &b);
+    float a, b;
+    scanf("%f%f", &a, &b);
     swap_(&a, &b);
-    printf("%d %d", a, b);
+    printf("%f %f", a, b);
     return 0;
 }
-void swap_(int *a, int *b)
+void swap_(float *a, float *b)
 {
-    int tmp;
+    float tmp;
     tmp = *a;
     *a = *b;
     *b = tmp;
